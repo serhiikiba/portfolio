@@ -10,7 +10,6 @@ type IconPropsType = {
 function Icon(props: IconPropsType) {
 	return (
 		<svg
-			style={{ display: 'block' }}
 			width={props.width || '120'}
 			height={props.height || '120'}
 			viewBox={props.viewBox || '0 0 120 120'}

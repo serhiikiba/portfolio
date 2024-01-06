@@ -1,24 +1,14 @@
 import styled from 'styled-components';
 
-function Menu() {
+function Menu(props: { menuList: Array<string> }) {
 	return (
 		<StyledMenu>
 			<ul>
-				<li>
-					<a href=''>Home</a>
-				</li>
-				<li>
-					<a href=''>About</a>
-				</li>
-				<li>
-					<a href=''>Tech Stack</a>
-				</li>
-				<li>
-					<a href=''>Projects</a>
-				</li>
-				<li>
-					<a href=''>Contact</a>
-				</li>
+				{props.menuList.map((item, index) => (
+					<li key={index}>
+						<a href='#/'>{item}</a>
+					</li>
+				))}
 			</ul>
 		</StyledMenu>
 	);
@@ -27,7 +17,11 @@ function Menu() {
 const StyledMenu = styled.nav`
 	ul {
 		display: flex;
-		gap: 30px;
+		gap: 50px;
+	}
+
+	a:hover {
+		color: #e70faa;
 	}
 `;
 

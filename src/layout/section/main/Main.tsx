@@ -12,7 +12,7 @@ function Main() {
 					Hi 👋, <br />
 					My name is
 				</span>
-				<span>kiba sergey</span>
+				<span>Kiba Sergey</span>
 				<h1>A Web Developer.</h1>
 			</StyledText>
 			<Icon iconId='abstraction' />
@@ -21,7 +21,20 @@ function Main() {
 	);
 }
 
-const StyledText = styled.div``;
+const StyledText = styled.div`
+	span,
+	h1 {
+		font-size: 58px;
+		font-weight: 700;
+	}
+
+	span + span {
+		display: block;
+		color: transparent;
+		background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+		background-clip: text;
+	}
+`;
 
 const Photo = styled.img`
 	width: 320px;

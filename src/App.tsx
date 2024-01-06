@@ -1,6 +1,10 @@
 import styled from 'styled-components';
+import Footer from './layout/footer/Footer';
 import Header from './layout/header/Header';
+import Contacts from './layout/section/contacts/Contacts';
 import Main from './layout/section/main/Main';
+import Projects from './layout/section/projects/Projects';
+import Skills from './layout/section/skills/Skills';
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
@@ -9,6 +13,10 @@ function App() {
 			<GlobalStyles />
 			<Header />
 			<Main />
+			<Skills />
+			<Projects />
+			<Contacts />
+			<Footer />
 		</StyledContainer>
 	);
 }

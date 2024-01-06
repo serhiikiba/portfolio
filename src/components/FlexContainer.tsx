@@ -4,8 +4,9 @@ type FlexContainerType = {
 	direction?: string;
 	justify?: string;
 	align?: string;
-	gap?: string;
 	wrap?: string;
+	gapRow?: string;
+	gapColum?: string;
 };
 
 export const FlexContainer = styled.div<FlexContainerType>`
@@ -13,6 +14,7 @@ export const FlexContainer = styled.div<FlexContainerType>`
 	flex-direction: ${props => props.direction || 'row'};
 	justify-content: ${props => props.justify || 'space-between'};
 	align-items: ${props => props.align || 'center'};
-	gap: ${props => props.gap || '0'};
 	flex-wrap: ${props => props.wrap || 'nowrap'};
+	row-gap: ${props => props.gapRow || '0'};
+	column-gap: ${props => props.gapColum || '0'};
 `;

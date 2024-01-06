@@ -23,10 +23,6 @@ const GlobalStyles = createGlobalStyle`
 		font-weight: 500;
 		text-decoration: none;
 		color: #A7A7A7;
-
-		&:hover {
-			color: #e70faa;
-		}
 	}
 
 	ul,
