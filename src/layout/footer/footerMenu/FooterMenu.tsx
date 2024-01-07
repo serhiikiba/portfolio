@@ -8,11 +8,15 @@ function FooterMenu() {
 	return (
 		<FlexContainer>
 			<Menu menuList={menuList} />
-			<StyledText>Designed and built by Pavan MG with Love & Coffee</StyledText>
+			<StyledText>
+				Crafted with <span style={{ color: '#8e19e2' }}>Passion</span> and{' '}
+				<span style={{ color: '#aa21cc' }}>Code</span> by{' '}
+				<span style={{ color: '#E70FAA' }}>Kiba Sergey</span> ☕
+			</StyledText>
 		</FlexContainer>
 	);
 }
 
-const StyledText = styled.div``;
+const StyledText = styled.p``;
 
 export default FooterMenu;

@@ -1,9 +1,9 @@
-import Icon from '../icon/Icon';
+import myLogo from '../../assets/images/logo.svg';
 
 function Logo() {
 	return (
 		<a href='#/'>
-			<Icon iconId='logo' width='97px' height='59px' viewBox='0 0 97 59' />
+			<img src={myLogo} alt='Logo' />
 		</a>
 	);
 }

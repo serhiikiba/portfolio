@@ -19,8 +19,10 @@ function Header() {
 export default Header;
 
 const StyledHeader = styled.header`
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 20px;
 	margin-bottom: 220px;
 `;

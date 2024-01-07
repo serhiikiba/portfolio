@@ -18,9 +18,9 @@ const StyledFooter = styled.footer`
 `;
 
 const StyledLine = styled.div`
-	margin: 30px auto 40px auto;
+	margin: 20px auto 40px auto;
 	height: 2px;
-	width: 90%;
+	width: 95%;
 	background-color: #42446e;
 `;
 
