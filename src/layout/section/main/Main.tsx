@@ -16,7 +16,7 @@ function Main() {
 				<h1>A Web Developer.</h1>
 			</StyledText>
 			<StyledBlockPhoto>
-				<StyledAbstraction src={abstraction} />
+				<StyledAbstraction src={abstraction} alt='Abstraction' />
 				<Photo src={photo} alt='My Photo' />
 			</StyledBlockPhoto>
 		</FlexContainer>
