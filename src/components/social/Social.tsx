@@ -1,10 +1,11 @@
+import styled from 'styled-components';
 import { FlexContainer } from '../FlexContainer';
 import Icon from '../icon/Icon';
 
 function Social() {
 	return (
 		<FlexContainer gapColum='20px'>
-			<a
+			<Link
 				href='https://github.com/serhiikiba'
 				aria-label='My social link Github'
 			>
@@ -14,8 +15,8 @@ function Social() {
 					height='30px'
 					viewBox='0 0 30 30'
 				/>
-			</a>
-			<a
+			</Link>
+			<Link
 				href='https://www.linkedin.com/in/sergey-kiba-517764278/'
 				aria-label='My social link linkedin'
 			>
@@ -25,8 +26,8 @@ function Social() {
 					height='30px'
 					viewBox='0 0 30 30'
 				/>
-			</a>
-			<a
+			</Link>
+			<Link
 				href='https://www.linkedin.com/in/sergey-kiba-517764278/'
 				aria-label='My social link facebook'
 			>
@@ -36,9 +37,17 @@ function Social() {
 					height='30px'
 					viewBox='0 0 47 47'
 				/>
-			</a>
+			</Link>
 		</FlexContainer>
 	);
 }
+
+const Link = styled.a`
+	color: #a7a7a7;
+
+	:hover {
+		color: #13b0f5;
+	}
+`;
 
 export default Social;

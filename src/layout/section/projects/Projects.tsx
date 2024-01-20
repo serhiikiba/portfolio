@@ -17,7 +17,7 @@ function Projects() {
 		<MyProjects>
 			<SectionTitle title='Projects' />
 			<SectionSubTitle title='Things I’ve built so far' />
-			<FlexContainer wrap='wrap' gapColum='40px' gapRow='65px'>
+			<FlexContainer wrap='wrap' gapColum='40px' gapRow='55px'>
 				<Project
 					src={projImg1}
 					title='Project Tile goes here'

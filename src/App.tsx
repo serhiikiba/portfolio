@@ -24,7 +24,7 @@ function App() {
 const StyledContainer = styled.div`
 	max-width: 1190px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 15px;
 `;
 
 export default App;

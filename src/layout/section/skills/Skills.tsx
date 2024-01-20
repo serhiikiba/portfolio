@@ -47,6 +47,10 @@ function Skills() {
 
 const SkillsSection = styled.section`
 	margin-top: 250px;
+
+	@media screen and (max-width: 995px) {
+		margin-top: 120px;
+	}
 `;
 
 const IconWrap = styled.div`

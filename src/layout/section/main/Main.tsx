@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-import abstraction from '../../../assets/images/Abstract.svg';
 import photo from '../../../assets/images/photo.png';
 import { FlexContainer } from '../../../components/FlexContainer';
 
 function Main() {
 	return (
-		<FlexContainer>
+		<StyledFlexContainer wrap='wrap' gapRow='50px'>
 			<StyledText>
 				<span>
 					Hi 👋, <br />
@@ -16,12 +15,18 @@ function Main() {
 				<h1>A Web Developer.</h1>
 			</StyledText>
 			<StyledBlockPhoto>
-				<StyledAbstraction src={abstraction} alt='Abstraction' />
+				{/* <StyledAbstraction src={abstraction} alt='Abstraction' /> */}
 				<Photo src={photo} alt='My Photo' />
 			</StyledBlockPhoto>
-		</FlexContainer>
+		</StyledFlexContainer>
 	);
 }
+
+const StyledFlexContainer = styled(FlexContainer)`
+	@media screen and (max-width: 995px) {
+		justify-content: center;
+	}
+`;
 
 const StyledText = styled.div`
 	span,
@@ -36,39 +41,32 @@ const StyledText = styled.div`
 		background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
 		background-clip: text;
 	}
-`;
 
-const Photo = styled.img`
-	width: 350px;
-	height: 350px;
-	border-radius: 50%;
-	position: relative;
-	overflow: hidden;
-	border: 4px solid transparent;
-	background: conic-gradient(from 90deg, #13b0f5, #e70faa);
-
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		border: 4px solid transparent;
-		border-radius: 50%;
-		z-index: -1;
+	@media screen and (max-width: 995px) {
+		text-align: center;
 	}
 `;
 
+const Photo = styled.img`
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+`;
+
 const StyledBlockPhoto = styled.div`
+	width: 360px;
+	height: 360px;
+	padding: 7px;
+	background: linear-gradient(to bottom, #13b0f5, #e70faa);
 	position: relative;
 	margin-right: 80px;
+	border-radius: 50%;
 `;
 
 const StyledAbstraction = styled.img`
 	position: absolute;
 	top: -140px;
-	left: -152px;
+	left: -145px;
 `;
 
 export default Main;
