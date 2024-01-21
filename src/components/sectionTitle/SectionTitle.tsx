@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { font } from '../../styles/Common';
 
 export function SectionTitle(props: { title: string }) {
 	return <Title>{props.title}</Title>;
@@ -10,16 +11,11 @@ export function SectionSubTitle(props: { title: string }) {
 
 const Title = styled.h2`
 	text-align: center;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 700;
 	margin-bottom: 30px;
+	${font({ Fmax: 48, Fmin: 36, weight: 700 })}
 `;
 
 const SubTitle = styled.h3`
 	text-align: center;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 400;
-	color: #a7a7a7;
+	${font({ Fmax: 32, Fmin: 28, color: '#a7a7a7' })}
 `;

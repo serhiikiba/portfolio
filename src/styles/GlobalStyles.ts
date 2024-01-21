@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
 		font-style: normal;
 		font-weight: 300;
 		color: #CCC;
+		line-height: 1.2;
 		background-color: #191919;
 	}
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { font } from '../../../styles/Common';
 
 function Contacts() {
 	return (
@@ -13,30 +14,31 @@ function Contacts() {
 
 const StyledContacts = styled.section`
 	margin-top: 170px;
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+	}
 `;
 
 const ContactsTitle = styled.h2`
 	text-align: center;
-	font-size: 58px;
-	font-weight: 700;
 	letter-spacing: -1px;
+	${font({ Fmax: 58, Fmin: 36, weight: 700 })}
 `;
 
 const ContactsLink = styled.a`
 	display: block;
 	text-align: center;
 	margin-top: 10px;
-	font-size: 58px;
-	font-weight: 700;
 	letter-spacing: -1px;
 	cursor: pointer;
-	color: transparent;
 	background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
 	background-clip: text;
 
 	&:hover {
 		color: none;
 	}
+
+	${font({ Fmax: 58, Fmin: 26, weight: 700, color: 'transparent' })}
 `;
 
 export default Contacts;

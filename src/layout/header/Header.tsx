@@ -36,8 +36,8 @@ const StyledHeader = styled.header`
 	margin-top: 20px;
 	margin-bottom: 220px;
 
-	@media screen and (max-width: 995px) {
-		margin-bottom: 120px;
+	@media screen and (max-width: 810px) {
+		margin-bottom: 100px;
 	}
 `;
 

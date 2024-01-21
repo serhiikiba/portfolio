@@ -17,7 +17,12 @@ function Projects() {
 		<MyProjects>
 			<SectionTitle title='Projects' />
 			<SectionSubTitle title='Things I’ve built so far' />
-			<FlexContainer wrap='wrap' gapColum='40px' gapRow='55px'>
+			<StyledFlexContainer
+				wrap='wrap'
+				gapColum='40px'
+				gapRow='55px'
+				style={{ marginTop: '90px' }}
+			>
 				<Project
 					src={projImg1}
 					title='Project Tile goes here'
@@ -46,13 +51,23 @@ function Projects() {
 					techStack='Tech stack : HTML , JavaScript, SASS, React'
 					gitLink='https://github.com/serhiikiba'
 				/>
-			</FlexContainer>
+			</StyledFlexContainer>
 		</MyProjects>
 	);
 }
 
+const StyledFlexContainer = styled(FlexContainer)`
+	@media screen and (max-width: 820px) {
+		justify-content: center;
+	}
+`;
+
 const MyProjects = styled.section`
 	margin-top: 200px;
+
+	@media screen and (max-width: 768px) {
+		margin-top: 100px;
+	}
 `;
 
 export default Projects;

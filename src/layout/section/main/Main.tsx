@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import photo from '../../../assets/images/photo.png';
 import { FlexContainer } from '../../../components/FlexContainer';
+import { font } from '../../../styles/Common';
 
 function Main() {
 	return (
@@ -31,8 +32,7 @@ const StyledFlexContainer = styled(FlexContainer)`
 const StyledText = styled.div`
 	span,
 	h1 {
-		font-size: 58px;
-		font-weight: 700;
+		${font({ Fmax: 58, Fmin: 38, weight: 700 })}
 	}
 
 	span + span {
@@ -51,16 +51,21 @@ const Photo = styled.img`
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
+	object-fit: cover;
 `;
 
 const StyledBlockPhoto = styled.div`
-	width: 360px;
-	height: 360px;
+	max-width: 360px;
+	max-height: 360px;
 	padding: 7px;
 	background: linear-gradient(to bottom, #13b0f5, #e70faa);
 	position: relative;
 	margin-right: 80px;
 	border-radius: 50%;
+
+	@media screen and (max-width: 905px) {
+		margin-right: 0;
+	}
 `;
 
 const StyledAbstraction = styled.img`

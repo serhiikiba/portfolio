@@ -15,6 +15,10 @@ function Footer() {
 const StyledFooter = styled.footer`
 	margin-top: 200px;
 	padding-bottom: 50px;
+
+	@media screen and (max-width: 768px) {
+		margin-top: 120px;
+	}
 `;
 
 const StyledLine = styled.div`

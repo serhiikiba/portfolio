@@ -6,8 +6,10 @@ import Social from '../../../components/social/Social';
 
 function FooterContacts() {
 	return (
-		<FlexContainer align='center'>
-			<Icon iconId='logoFooter' viewBox='0 0 97 59' />
+		<StyledFlexContainer align='center'>
+			<StyledIconContainer>
+				<Icon iconId='logoFooter' viewBox='0 0 97 59' />
+			</StyledIconContainer>
 			<StyledContacts>
 				<StyledMyContacts>
 					<StyledContactLink href='tel:+38 664732827'>
@@ -19,18 +21,41 @@ function FooterContacts() {
 				</StyledMyContacts>
 				<Social />
 			</StyledContacts>
-		</FlexContainer>
+		</StyledFlexContainer>
 	);
 }
 
+const StyledFlexContainer = styled(FlexContainer)`
+	@media screen and (max-width: 410px) {
+		justify-content: center;
+	}
+`;
+
 const StyledContacts = styled.div`
 	display: flex;
+	gap: 30px;
+
+	@media screen and (max-width: 640px) {
+		flex-direction: column;
+		row-gap: 30px;
+	}
+`;
+
+const StyledIconContainer = styled.div`
+	@media screen and (max-width: 410px) {
+		display: none;
+	}
 `;
 
 const StyledMyContacts = styled.div`
 	display: flex;
 	gap: 30px;
-	margin-right: 60px;
+
+	@media screen and (max-width: 970px) {
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+	}
 `;
 
 const StyledContactLink = styled.a`

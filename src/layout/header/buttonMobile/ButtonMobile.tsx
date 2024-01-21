@@ -41,7 +41,7 @@ const ButtonWrap = styled.div<{ isOpen: boolean }>`
 				${props =>
 					props.isOpen &&
 					css<{ isOpen: boolean }>`
-						transform: rotate(45deg) translateY(13.5px);
+						transform: rotate(45deg) translateY(14px);
 					`}
 			}
 
@@ -57,7 +57,7 @@ const ButtonWrap = styled.div<{ isOpen: boolean }>`
 				${props =>
 					props.isOpen &&
 					css<{ isOpen: boolean }>`
-						transform: rotate(-45deg) translateY(-13.5px);
+						transform: rotate(-45deg) translateY(-14px);
 					`}
 			}
 		}
