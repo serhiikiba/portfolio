@@ -6,7 +6,7 @@ import { font } from '../../../styles/Common';
 
 function Main() {
 	return (
-		<StyledFlexContainer wrap='wrap' gapRow='50px'>
+		<StyledFlexContainer wrap='wrap' gapRow='50px' id='main'>
 			<StyledText>
 				<span>
 					Hi 👋, <br />
@@ -16,7 +16,6 @@ function Main() {
 				<h1>A Web Developer.</h1>
 			</StyledText>
 			<StyledBlockPhoto>
-				{/* <StyledAbstraction src={abstraction} alt='Abstraction' /> */}
 				<Photo src={photo} alt='My Photo' />
 			</StyledBlockPhoto>
 		</StyledFlexContainer>
@@ -66,12 +65,6 @@ const StyledBlockPhoto = styled.div`
 	@media screen and (max-width: 905px) {
 		margin-right: 0;
 	}
-`;
-
-const StyledAbstraction = styled.img`
-	position: absolute;
-	top: -140px;
-	left: -145px;
 `;
 
 export default Main;

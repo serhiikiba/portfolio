@@ -8,7 +8,7 @@ function FooterMenu() {
 	return (
 		<FlexContainer>
 			<Navigation>
-				<Menu menuList={menuList} />
+				<Menu />
 			</Navigation>
 			<StyledText>
 				Crafted with <span style={{ color: '#8e19e2' }}>Passion</span> and{' '}

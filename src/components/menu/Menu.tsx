@@ -1,11 +1,36 @@
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
-function Menu(props: { menuList: Array<string> }) {
+const items = [
+	{
+		title: 'About',
+		href: 'about',
+	},
+	{
+		title: 'Tech Stack',
+		href: 'skills',
+	},
+	{
+		title: 'Projects',
+		href: 'projects',
+	},
+	{
+		title: 'Contact',
+		href: 'contact',
+	},
+];
+
+function Menu() {
+	const onConsole = () => {
+		console.log('Click');
+	};
 	return (
 		<StyledMenu>
-			{props.menuList.map((item, index) => (
+			{items.map((item, index) => (
 				<li key={index}>
-					<a href='#/'>{item}</a>
+					<Link to={`${item.href}`} onClick={onConsole} smooth={true}>
+						{item.title}
+					</Link>
 				</li>
 			))}
 		</StyledMenu>
@@ -15,6 +40,11 @@ function Menu(props: { menuList: Array<string> }) {
 const StyledMenu = styled.ul`
 	display: flex;
 	gap: 50px;
+
+	a {
+		transition: all 0.5s;
+		cursor: pointer;
+	}
 
 	a:hover {
 		color: #e70faa;

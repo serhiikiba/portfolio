@@ -7,9 +7,7 @@ import Social from '../../components/social/Social';
 import ButtonMobile from './buttonMobile/ButtonMobile';
 import MobileMenu from './mobileMenu/MobileMenu';
 
-export const menuList = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact'];
-
-function Header() {
+export function Header() {
 	const [isOpen, setOpen] = useState(false);
 
 	const handelModal = () => {
@@ -19,11 +17,11 @@ function Header() {
 		<StyledHeader>
 			<Logo />
 			<Navigation>
-				<Menu menuList={menuList} />
+				<Menu />
 				<Social />
 			</Navigation>
 			<ButtonMobile isOpen={isOpen} handelModal={handelModal} />
-			<MobileMenu isOpen={isOpen} />
+			<MobileMenu isOpen={isOpen} handelModal={handelModal} />
 		</StyledHeader>
 	);
 }
@@ -35,6 +33,7 @@ const StyledHeader = styled.header`
 	align-items: center;
 	margin-top: 20px;
 	margin-bottom: 220px;
+	z-index: 1;
 
 	@media screen and (max-width: 810px) {
 		margin-bottom: 100px;

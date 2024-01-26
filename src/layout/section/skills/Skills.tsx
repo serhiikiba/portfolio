@@ -22,7 +22,7 @@ const mySkillsIcons = [
 
 function Skills() {
 	return (
-		<SkillsSection>
+		<SkillsSection id='skills'>
 			<SectionTitle title='My Tech Stack' />
 			<SectionSubTitle title='Technologies I’ve been working with recently' />
 			<IconWrap>

@@ -28,7 +28,7 @@ function Social() {
 				/>
 			</Link>
 			<Link
-				href='https://www.linkedin.com/in/sergey-kiba-517764278/'
+				href='https://www.facebook.com/profile.php?id=100078969580665'
 				aria-label='My social link facebook'
 			>
 				<Icon
@@ -44,6 +44,7 @@ function Social() {
 
 const Link = styled.a`
 	color: #a7a7a7;
+	transition: color 0.5s;
 
 	:hover {
 		color: #13b0f5;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { FlexContainer } from '../../../components/FlexContainer';
 import Icon from '../../../components/icon/Icon';
 import Social from '../../../components/social/Social';
@@ -8,7 +9,14 @@ function FooterContacts() {
 	return (
 		<StyledFlexContainer align='center'>
 			<StyledIconContainer>
-				<Icon iconId='logoFooter' viewBox='0 0 97 59' />
+				<Link
+					to='main'
+					onClick={() => {
+						scroll.scrollToTop();
+					}}
+				>
+					<Icon iconId='logoFooter' viewBox='0 0 97 59' />
+				</Link>
 			</StyledIconContainer>
 			<StyledContacts>
 				<StyledMyContacts>
@@ -42,6 +50,10 @@ const StyledContacts = styled.div`
 `;
 
 const StyledIconContainer = styled.div`
+	a {
+		cursor: pointer;
+	}
+
 	@media screen and (max-width: 410px) {
 		display: none;
 	}

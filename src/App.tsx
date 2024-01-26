@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import GoTopBtn from './components/goTopBtn/GoTopBtn';
 import Footer from './layout/footer/Footer';
 import Header from './layout/header/Header';
 import Contacts from './layout/section/contacts/Contacts';
@@ -17,6 +18,7 @@ function App() {
 			<Projects />
 			<Contacts />
 			<Footer />
+			<GoTopBtn />
 		</StyledContainer>
 	);
 }

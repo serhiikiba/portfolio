@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
 import Menu from '../../../components/menu/Menu';
-import { menuList } from '../Header';
+import { ButtonMobileProps } from '../buttonMobile/ButtonMobile';
 
-function MobileMenu(props: { isOpen: boolean }) {
+function MobileMenu(props: ButtonMobileProps) {
 	return (
-		<MobilePopup isOpen={props.isOpen}>
+		<MobilePopup isOpen={props.isOpen} onClick={props.handelModal}>
 			<Navigation>
-				<Menu menuList={menuList} />
+				<Menu />
 			</Navigation>
 		</MobilePopup>
 	);

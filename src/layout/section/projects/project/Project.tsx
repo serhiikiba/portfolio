@@ -31,7 +31,7 @@ function Project(props: ProjectType) {
 
 const StyledProject = styled.div`
 	text-align: center;
-	max-width: 373px;
+	max-width: 480px;
 	min-height: 567px;
 	border-radius: 20px;
 	background: #363636;

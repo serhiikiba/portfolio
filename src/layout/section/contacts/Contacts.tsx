@@ -3,7 +3,7 @@ import { font } from '../../../styles/Common';
 
 function Contacts() {
 	return (
-		<StyledContacts>
+		<StyledContacts id='contact'>
 			<ContactsTitle>For any questions please mail me:</ContactsTitle>
 			<ContactsLink href='mailto:serhiikiba@gmail.com'>
 				serhiikiba@gmail.com

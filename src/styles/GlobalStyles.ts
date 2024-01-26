@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
 		color: #CCC;
 		line-height: 1.2;
 		background-color: #191919;
+		min-width: 360px;
 	}
 
 	a {

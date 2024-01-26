@@ -14,10 +14,11 @@ import projImg4 from '../../../assets/images/proj-img4.png';
 
 function Projects() {
 	return (
-		<MyProjects>
+		<MyProjects id='projects'>
 			<SectionTitle title='Projects' />
 			<SectionSubTitle title='Things I’ve built so far' />
 			<StyledFlexContainer
+				justify='space-around'
 				wrap='wrap'
 				gapColum='40px'
 				gapRow='55px'
@@ -27,8 +28,8 @@ function Projects() {
 					src={projImg1}
 					title='Project Tile goes here'
 					description='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'
-					techStack='Tech stack : HTML , JavaScript, SASS, React'
-					gitLink='https://github.com/serhiikiba'
+					techStack='Tech stack : Styled components, React, TypeScript'
+					gitLink='https://github.com/Serhii-Ki/creative_art'
 				/>
 				<Project
 					src={projImg2}

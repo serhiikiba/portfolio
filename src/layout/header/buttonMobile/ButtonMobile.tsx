@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 
-interface ButtonMobileProps {
+export type ButtonMobileProps = {
 	isOpen: boolean;
 	handelModal: React.MouseEventHandler<HTMLDivElement>;
-}
+};
 
 function ButtonMobile(props: ButtonMobileProps) {
 	return (
