@@ -7,7 +7,8 @@ import Project from './project/Project';
 import projImg1 from '../../../assets/images/web-slider.png';
 import projImg2 from '../../../assets/images/web-nft.png';
 import projImg3 from '../../../assets/images/web-game.png';
-import projImg4 from '../../../assets/images/proj-img4.png';
+import projImg4 from '../../../assets/images/game-canvas.jpg';
+import projImg5 from '../../../assets/images/todo-list.png';
 
 function Projects() {
 	return (
@@ -48,6 +49,13 @@ function Projects() {
 					description='This project features two exciting mini-games, Flappy Bird and Racing, developed using HTML, JavaScript, and the Canvas API. The games highlight my skills in creating interactive and visually engaging web applications using 2D graphics.'
 					techStack='Tech stack : HTML, JavaScript, canvas'
 					gitLink='https://github.com/Serhii-Ki/GamesOnCanvas'
+				/>
+				<Project
+						src={projImg5}
+						title='To-Do List Application'
+						description='This project is a feature-rich to-do list application developed using React, Redux, MUI (Material-UI), and react-router-dom. The application showcases my ability to build complex, state-managed web applications with a modern UI framework and client-side routing.'
+						techStack='Tech stack : React, Redux, MUI, react-router-dom'
+						gitLink='https://github.com/Serhii-Ki/todolist'
 				/>
 			</StyledFlexContainer>
 		</MyProjects>
