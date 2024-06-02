@@ -1,10 +1,7 @@
 import styled from 'styled-components';
-import { FlexContainer } from '../../../components/FlexContainer';
+import {FlexContainer} from '../../../components/FlexContainer';
 import Icon from '../../../components/icon/Icon';
-import {
-	SectionSubTitle,
-	SectionTitle,
-} from '../../../components/sectionTitle/SectionTitle';
+import {SectionSubTitle, SectionTitle,} from '../../../components/sectionTitle/SectionTitle';
 
 const mySkillsIcons = [
 	'htmlIcon',
@@ -26,7 +23,7 @@ function Skills() {
 			<SectionTitle title='My Tech Stack' />
 			<SectionSubTitle title='Technologies I’ve been working with recently' />
 			<IconWrap>
-				<FlexContainer gapRow='60px' gapColum='70px' wrap='wrap'>
+				<FlexContainer gapRow='60px' gapColum='80px' wrap='wrap'>
 					{mySkillsIcons.map((item, index) => {
 						const viewBox = item === 'styled' ? '0 0 32 32' : '0 0 120 120';
 						return (
