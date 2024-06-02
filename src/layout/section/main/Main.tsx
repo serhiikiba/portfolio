@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 import photo from '../../../assets/images/photo.png';
-import { FlexContainer } from '../../../components/FlexContainer';
-import { font } from '../../../styles/Common';
+import {FlexContainer} from '../../../components/FlexContainer';
+import {font} from '../../../styles/Common';
 
 function Main() {
 	return (
