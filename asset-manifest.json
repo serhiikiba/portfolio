@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/static/js/main.9fa3fd60.js",
-    "static/media/web-slider.png": "/static/media/web-slider.146231e0d952305067aa.png",
-    "static/media/photo.png": "/static/media/photo.03bef72501f4870aa1db.png",
-    "static/media/web-game.png": "/static/media/web-game.635e115e2c54bb9f7d3c.png",
-    "static/media/game-canvas.jpg": "/static/media/game-canvas.38afc4a3df85998d29ca.jpg",
-    "static/media/web-nft.png": "/static/media/web-nft.59ff967eb6c2c6c79ac7.png",
-    "static/media/icons-sprite.svg": "/static/media/icons-sprite.027e044912720cece7361d7874fc8cfc.svg",
-    "static/media/todo-list.png": "/static/media/todo-list.c466a482a4c1f3fdf9a4.png",
-    "static/media/logo.svg": "/static/media/logo.a83d8f7e1f8296bcfa035e70ca9e9e5f.svg",
-    "index.html": "/index.html",
-    "main.9fa3fd60.js.map": "/static/js/main.9fa3fd60.js.map"
+    "main.js": "/portfolio/static/js/main.499dc8c3.js",
+    "static/media/web-slider.png": "/portfolio/static/media/web-slider.146231e0d952305067aa.png",
+    "static/media/photo.png": "/portfolio/static/media/photo.03bef72501f4870aa1db.png",
+    "static/media/web-game.png": "/portfolio/static/media/web-game.635e115e2c54bb9f7d3c.png",
+    "static/media/game-canvas.jpg": "/portfolio/static/media/game-canvas.38afc4a3df85998d29ca.jpg",
+    "static/media/web-nft.png": "/portfolio/static/media/web-nft.59ff967eb6c2c6c79ac7.png",
+    "static/media/icons-sprite.svg": "/portfolio/static/media/icons-sprite.027e044912720cece7361d7874fc8cfc.svg",
+    "static/media/todo-list.png": "/portfolio/static/media/todo-list.c466a482a4c1f3fdf9a4.png",
+    "static/media/logo.svg": "/portfolio/static/media/logo.a83d8f7e1f8296bcfa035e70ca9e9e5f.svg",
+    "index.html": "/portfolio/index.html",
+    "main.499dc8c3.js.map": "/portfolio/static/js/main.499dc8c3.js.map"
   },
   "entrypoints": [
-    "static/js/main.9fa3fd60.js"
+    "static/js/main.499dc8c3.js"
   ]
 }
