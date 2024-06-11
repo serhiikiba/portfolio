@@ -12,7 +12,6 @@ function Image(props: ImageType) {
 const StyledImage = styled.img`
 	width: 100%;
 	height: 260px;
-	border-radius: 20px 20px 0px 0px;
 	object-fit: cover;
 `;
 

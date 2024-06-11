@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Icon from '../../../../components/icon/Icon';
-import Image, { ImageType } from '../../../../components/image/Image';
+import Image, {ImageType} from '../../../../components/image/Image';
 
 type ProjectType = ImageType & {
 	title: string;
@@ -33,7 +33,7 @@ const StyledProject = styled.div`
 	text-align: center;
 	max-width: 480px;
 	min-height: 567px;
-	border-radius: 20px;
+	border-radius: 0 0 10px 10px;
 	background: #363636;
 	box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
 

@@ -54,7 +54,7 @@ function Projects() {
 						src={projImg5}
 						title='To-Do List Application'
 						description='This project is a feature-rich to-do list application developed using React, Redux, MUI (Material-UI), and react-router-dom. The application showcases my ability to build complex, state-managed web applications with a modern UI framework and client-side routing.'
-						techStack='Tech stack : React, Redux, MUI, react-router-dom'
+						techStack='Tech stack : React, Redux, MUI, react-router-dom, Storybook, unit test'
 						gitLink='https://github.com/Serhii-Ki/todolist'
 				/>
 			</StyledFlexContainer>
