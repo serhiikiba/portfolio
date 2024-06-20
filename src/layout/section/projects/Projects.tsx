@@ -9,6 +9,7 @@ import projImg2 from '../../../assets/images/web-nft.png';
 import projImg3 from '../../../assets/images/web-game.png';
 import projImg4 from '../../../assets/images/game-canvas.jpg';
 import projImg5 from '../../../assets/images/todo-list.png';
+import projImg6 from '../../../assets/images/outschool.png';
 
 function Projects() {
 	return (
@@ -28,6 +29,13 @@ function Projects() {
 					description='This project is a compact and engaging website featuring a dynamic slider, built using HTML, SCSS, JavaScript, and the Swiper library. The site highlights my proficiency in creating interactive web components'
 					techStack='Tech stack : HTML SCSS JavaScript Swiper'
 					gitLink='https://github.com/Serhii-Ki/travelX'
+				/>
+				<Project
+						src={projImg6}
+						title='Website OutSchool'
+						description='This project is a modern and responsive landing page website built using HTML, Tailwind CSS, and JavaScript. The landing page is designed to be visually appealing, user-friendly, and optimized for both desktop and mobile devices.'
+						techStack='Tech stack : HTML TailwindCSS JavaScript'
+						gitLink='https://github.com/Serhii-Ki/outschool'
 				/>
 				<Project
 					src={projImg2}
