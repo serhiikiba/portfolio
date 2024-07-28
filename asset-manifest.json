@@ -1,6 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.2a8b77e4.js",
+    "main.js": "/portfolio/static/js/main.faf30e69.js",
+    "static/media/game-google.png": "/portfolio/static/media/game-google.a2e02a1611400a0b6d2e.png",
     "static/media/outschool.png": "/portfolio/static/media/outschool.d116f4acb011cb5296ae.png",
     "static/media/web-slider.png": "/portfolio/static/media/web-slider.146231e0d952305067aa.png",
     "static/media/photo.png": "/portfolio/static/media/photo.03bef72501f4870aa1db.png",
@@ -11,9 +12,9 @@
     "static/media/todo-list.png": "/portfolio/static/media/todo-list.c466a482a4c1f3fdf9a4.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.a83d8f7e1f8296bcfa035e70ca9e9e5f.svg",
     "index.html": "/portfolio/index.html",
-    "main.2a8b77e4.js.map": "/portfolio/static/js/main.2a8b77e4.js.map"
+    "main.faf30e69.js.map": "/portfolio/static/js/main.faf30e69.js.map"
   },
   "entrypoints": [
-    "static/js/main.2a8b77e4.js"
+    "static/js/main.faf30e69.js"
   ]
 }
